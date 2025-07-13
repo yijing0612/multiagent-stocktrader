@@ -50,12 +50,12 @@ Multi-Agent Stock Trader is a simulation framework designed to evaluate and comp
 ```bash
 git clone https://github.com/yijing0612/multiagent-stocktrader.git
 cd multiagent-stocktrader
-
-### 2. Install Dependencies
-
+2. Install Dependencies
 Install the required Python packages:
 
-```bash
+bash
+Copy
+Edit
 pip install -r requirements.txt
 If requirements.txt is not available, manually install common dependencies:
 
