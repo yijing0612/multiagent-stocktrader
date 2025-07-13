@@ -37,9 +37,9 @@ Multi-Agent Stock Trader is a simulation framework designed to evaluate and comp
 
 - **Programming Language:** Python  
 - **Libraries:**  
-  - `pandas`, `numpy` – Data processing and numerical computations  
-  - `matplotlib`, `seaborn` – Visualization of trading performance  
-  - Standard Python libraries for file handling and agent control
+  - OpenAI GPT 
+  - Postgre Database 
+  - Redis
 
 ---
 
@@ -58,34 +58,13 @@ cd multiagent-stocktrader
 pip install -r requirements.txt
 ```
 
-### 3. Prepare the Dataset
-
-Place your historical stock price data in the data/ directory.
-Ensure the data files follow a consistent format, such as:
-
-```bash
-Date,Open,High,Low,Close,Volume
-2022-01-01,100,105,95,102,1000000
-...
-```
-
-### 4. Run the Simulation
+### 3. Run the Simulation
 
 ```bash
 python main.py
 ```
 
 Simulation results and logs will be printed to the console and optionally saved in the results/ directory.
-
----
-
-## ⚙️ Configuration
-
-You can modify simulation settings in `config.py` (if available) or directly within the codebase:
-
-- **Agent Settings** – Define number and type of agents  
-- **Trading Rules** – Set buy/sell thresholds, holding limits, etc.  
-- **Market Settings** – Configure time periods, stock selection, and initial capital
 
 ---
 
