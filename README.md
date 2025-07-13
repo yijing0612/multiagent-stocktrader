@@ -50,70 +50,63 @@ Multi-Agent Stock Trader is a simulation framework designed to evaluate and comp
 ```bash
 git clone https://github.com/yijing0612/multiagent-stocktrader.git
 cd multiagent-stocktrader
-2. Install Dependencies
-Install the required Python packages:
+```
 
-bash
-Copy
-Edit
+### 2. Install Dependencies
+
+```bash
 pip install -r requirements.txt
-If requirements.txt is not available, manually install common dependencies:
+```
 
-bash
-Copy
-Edit
-pip install pandas numpy matplotlib seaborn
-3. Prepare the Dataset
+### 3. Prepare the Dataset
+
 Place your historical stock price data in the data/ directory.
 Ensure the data files follow a consistent format, such as:
 
-mathematica
-Copy
-Edit
+```bash
 Date,Open,High,Low,Close,Volume
 2022-01-01,100,105,95,102,1000000
 ...
-You can use data from sources like Yahoo Finance or Alpha Vantage.
+```
 
-4. Run the Simulation
-Start the simulation by executing the main script:
+### 4. Run the Simulation
 
-bash
-Copy
-Edit
+```bash
 python main.py
+```
+
 Simulation results and logs will be printed to the console and optionally saved in the results/ directory.
 
-⚙️ Configuration
-You can modify simulation settings in config.py (if available) or directly within the codebase:
+---
 
-Agent Settings – Define number and type of agents
+## ⚙️ Configuration
 
-Trading Rules – Set buy/sell thresholds, holding limits, etc.
+You can modify simulation settings in `config.py` (if available) or directly within the codebase:
 
-Market Settings – Configure time periods, stock selection, and initial capital
+- **Agent Settings** – Define number and type of agents  
+- **Trading Rules** – Set buy/sell thresholds, holding limits, etc.  
+- **Market Settings** – Configure time periods, stock selection, and initial capital
 
-📊 Outputs
+---
+
+## 📊 Outputs
+
 After running simulations, the framework will generate:
 
-Agent Performance Metrics – Total return, volatility, win rate, etc.
+- **Agent Performance Metrics** – Total return, volatility, win rate, etc.  
+- **Portfolio Value Plots** – Line graphs showing portfolio value over time  
+- **Trade Logs** – CSV logs of buy/sell actions and portfolio state  
 
-Portfolio Value Plots – Line graphs showing portfolio value over time
+Visualizations can be found in the `plots/` or `results/` folder.
 
-Trade Logs – CSV logs of buy/sell actions and portfolio state
+---
 
-Visualizations can be found in the plots/ or results/ folder.
+## 🤝 Contributing
 
-🤝 Contributing
 Contributions are welcome! Feel free to:
 
-Add new agent strategies
-
-Improve data preprocessing or analysis
-
-Refactor code for scalability or performance
+- Add new agent strategies  
+- Improve data preprocessing or analysis  
+- Refactor code for scalability or performance  
 
 Please open an issue or submit a pull request for proposed changes.
-
-📫 Contact
-For questions or collaborations, feel free to reach out via GitHub Issues.
